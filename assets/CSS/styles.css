@@ -1,0 +1,52 @@
+
+body {
+  background: #f4f2ec url(../images/fundo.png) repeat-x;
+  font: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+a:link, :active, a:visited {
+  color: #af670a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #227115;
+}
+
+header {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 15px 0;
+  height: 55px;
+}
+
+/* Configurações de logo */
+#logo a {
+  width: 248px;
+  height: 21px;
+  text-indent: -9999px;
+  display: block;
+  background: url(../images/logo.png) no-repeat;
+}
+
+/* Configurações da barra de navegação(cabeçalho) */
+header nav ul {
+  list-style: none;
+  margin: 20px;
+  float: right;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  display: block;
+  margin-right: 25px;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid #535858;
+}
