@@ -1,7 +1,7 @@
 
 body {
   background: #f4f2ec url(../images/fundo.png) repeat-x;
-  font: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 }
 
 a:link, :active, a:visited {
@@ -58,13 +58,44 @@ header nav ul li a:hover {
 /* Configurações da área main */
 #principal {
   width: 1080px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 #principal #conteudo {
   width: 710px;
   float: left;
-  background: green;
+  margin-bottom: 20px;
+}
+
+#principal #postagens #video {
+  float: left;
+  width: 310px;
+  margin-left: 25px;
+}
+
+#principal #postagens #mapa {
+  float: left;
+  width: 310px;
+  margin-left: 35px;
+}
+
+#principal #postagens #exposicoes {
+  float: left;
+  width: 310px;
+  margin: 15px 0 0 25px;
+}
+
+#principal #postagens #historia {
+  float: left;
+  width: 310px;
+  margin: 15px 0 0 35px;
+}
+
+#principal #conteudo h3 {
+  color: #227115;
+  font-size: 1em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 /* Formatação da área aside */
@@ -73,11 +104,12 @@ header nav ul li a:hover {
   float: right;
   background: #ebe7dd;
   padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #principal aside #visita {
   background: #cdc8b1;
-  padding: 10px 27px 27px 27px;
+  padding: 10px 10px 20px;
   margin-top: 10px;
 }
 
@@ -105,11 +137,24 @@ header nav ul li a:hover {
   display: none;
 }
 
-#principal aside #visita input.campo {
-  border: 1px solid #ada484;
+#principal aside #visita #form-data {
+  float: left;
 }
 
-#principal aside #visita input#qtd {
+#principal aside #visita #form-qtd-pessoas {
+  float: right;
+}
+
+#principal aside #visita #form-data input.campo{
+  width: 110px;
+  border: 1px solid #ad8484;
+}
+
+#principal aside #visita #form-qtd-pessoas input.campo {
+  border: 1px solid #ad8484;
+}
+
+#principal aside #visita #form-qtd-pessoas input#qtd {
   width: 30px;
 }
 
@@ -140,4 +185,33 @@ header nav ul li a:hover {
   width: 93;
   margin-left: 2px;
   margin-top: 3px;
+}
+
+/* Formatação do rodapé */
+footer {
+  clear: both;
+  padding: 20px 0 30px 0;
+  text-align: center;
+  background: url(../images/fundo-rodape.png) no-repeat center top;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 2px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav ul li {
+  float: top;
+}
+
+footer nav ul li a {
+  font-size: 0.8em;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+footer nav ul li a:hover {
+  border-bottom: 1px solid #535858;
 }

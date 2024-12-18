@@ -45,6 +45,37 @@
         <section id="capa">
           <img src="assets/images/museu.png" alt="Foto do Museu">
         </section>
+
+        <section id="postagens">
+          <article id="video">
+            <h3>Vídeo: conheça o museu</h3>
+            <iframe width="310" height="170" src="https://www.youtube.com/embed/67M0JBIfgYA?si=lzbFhJbdPpWFqwPS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </article>
+
+          <article id="mapa">
+            <h3>Mapa: encontre o museu</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311821341!2d-43.22910382468973!3d-22.9057599792558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1734532853131!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </article>
+
+          <article id="exposicoes">
+            <h3>Exposições</h3>
+            <ul>
+              <li><a href="#">Os assustadores insetos</a></li>
+              <li><a href="#">O crânio de Luzia, a mulher mais antiga do Brasil</a></li>
+              <li><a href="#">Preguiça gigante e o tigre-dente-de-sabre</a></li>
+              <li><a href="#">Plantas do Brasil central</a></li>
+              <li><a href="#">Tereza Cristina: A Imperatriz Arqueóloga</a></li>
+              <li><a href="#">Arte com Dinossauros - Paleoarte</a></li>
+              <li><strong><a href="#">Veja todos(65)</a></strong></li>
+            </ul>
+          </article>
+
+          <article id="historia">
+            <h3>200 anos de história</h3>
+            <p>Numa ponta que avança sobre o mar, posteriormente conhecida como a Ponta do Calabolço, entre as prais de Piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses contruíram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.</p>
+            <a href="#"><strong>Leia mais...</strong></a>
+          </article>
+        </section>
       </div> <!-- Fim do conteúdo principal -->
 
       <aside> <!-- Início da área aside-->
@@ -58,11 +89,15 @@
             <fieldset>
               <legend>Selecione uma data</legend>
 
-              <label for="data">Data</label>
-              <input class="campo" type="text" id="data" value="dd/mm/aaaa">
+              <div id="form-data">
+                <label for="data">Data</label>
+                <input class="campo" type="text" id="data" value="dd/mm/aaaa">
+              </div>
 
-              <label for="qtd">Qtd pessoas</label>
-              <input class="campo" type="text" id="qtd" value="1">
+              <div id="form-qtd-pessoas">
+                <label for="qtd">Qtd pessoas</label>
+                <input class="campo" type="text" id="qtd" value="1">
+              </div>
 
             </fieldset>
             <input class="botao" type="submit" value="Verificar disponibilidade">
@@ -86,5 +121,20 @@
         </section>
       </aside> <!-- Fim da área aside-->
     </main>
+
+    <footer>
+      <nav> 
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Exposições</a></li>
+          <li><a href="#">Pesquisa</a></li>
+          <li><a href="#">Acervo</a></li>
+          <li><a href="#">Vídeos</a></li>
+          <li><a href="#">Fotos</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
